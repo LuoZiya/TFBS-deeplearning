@@ -12,4 +12,4 @@ Usage:
 The predicted inputs is the open chromatin region sequence of ATAC-seq in csv file (see example ./data/predict-goodATAC.CSV). The prediction model reads a window size of 200bp with a displacement of 100.
 
 3. The outputs
-The outputs file (see example ./result/goodatacout.csv) contain two columns, the second column is the TFBS presence or absence, 1 is bound, 0 is not bound. If TFBS is bound, the first column is the position where TFBS is bound (site=start+the first column number*100). Finally, get TFBS position and its' regulated target gene.
+The outputs file (see example ./result/goodatacout.csv) contain two columns, the second column is the TFBS presence or absence, 1 is bound, 0 is not bound. If TFBS is bound, the first column is the position where TFBS is bound (site=start+the first column number*100). Finally, get TFBS position.
