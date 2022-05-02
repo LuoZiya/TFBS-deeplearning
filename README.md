@@ -6,7 +6,9 @@ Deep learning methods could be applied to predict TFBS in different tissues by c
 Usage:
 1. The models：
 ① The model training selects the overlapping binding sites of transcription factors and the open chromatin region of ATAC-seq , upstream and downstream 100bp of the peak summit is positive data, and the open chromatin region of ATAC-seq without TFBS is negative data set. 
-② To predict each TF, it need to replace the corresponding training data (./data/test.csv and ./data/train.csv).
+② To train the model by train_model.ipynb, the input is ./data/train.csv. 
+③ To test the model by test_model.ipynb, the input is ./data/test.csv.
+④ To predict each TF, it need to replace the corresponding training data (./data/test.csv and ./data/train.csv).
 
 2. The predicted inputs：
 The predicted inputs is the open chromatin region sequence of ATAC-seq in csv file (see example ./data/predict-goodATAC.CSV). The prediction model reads a window size of 200bp with a displacement of 100.
